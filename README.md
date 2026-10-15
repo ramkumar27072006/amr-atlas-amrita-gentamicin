@@ -14,10 +14,11 @@ Amrita Vishwa Vidyapeetham, Coimbatore Campus
 - Training-only five-fold variability
 - Serial, OpenMP, and MPI feature extraction timings
 - AMRFinderPlus results and a searchable per-genome evidence explorer
+- Browser-side FASTA QC and exact SHA-256 lookup for uploaded cohort genomes
 
 ## Scientific scope
 
-The phenotype records contain laboratory-method metadata but were computationally curated from BV-BRC; they are not independent experimental susceptibility results confirmed by this project. Results are exploratory and do not establish clinical performance. AMRFinderPlus is independent determinant evidence; zero hits do not mean susceptible. The published page displays saved cohort results only. New FASTA analysis requires a separate backend and is not performed by GitHub Pages.
+The phenotype records contain laboratory-method metadata but were computationally curated from BV-BRC; they are not independent experimental susceptibility results confirmed by this project. Results are exploratory and do not establish clinical performance. AMRFinderPlus is independent determinant evidence; zero hits do not mean susceptible. The upload panel computes basic QC locally and can identify an exact byte-level match to a saved cohort genome. It does not upload sequence files. For a new genome, model inference and AMRFinderPlus interpretation require a separate backend; GitHub Pages does not run those analysis tools.
 
 ## Publish with GitHub Pages
 
